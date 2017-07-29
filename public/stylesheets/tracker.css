@@ -1,0 +1,62 @@
+.colored {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+p {
+  font-size: 3vh;
+  max-height: 5%
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 10vh;
+  max-height: 33%
+}
+h2 {
+  max-height: 50%;
+  font-size: 4vh;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.topblock {
+  height: 33vh;
+  width: 100vw;
+  position: relative;
+}
+.block {
+  float: left;
+  height: 33vh;
+  width: 50vw;
+  position: relative;
+}
+.column3 {
+  float: left;
+  width: 33%;
+}
+.topblock *{
+  text-align: center;
+}
+.block *{
+  text-align: center;
+}
+.touchscreen-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+.touchscreen-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}

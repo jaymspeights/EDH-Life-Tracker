@@ -1,0 +1,28 @@
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+{{#you}}
+<div class="topblock" style="background-color:{{ color }}">
+  <div class="player-left touchscreen-left"></div>
+  <div class="player-right touchscreen-right"></div>
+  <div class="column3">
+    <p>Commander Damage Taken</p>
+    {{#damage}}
+      <p class="colored" style="color:{{ color }}">{{ damage }}</p>
+    {{/damage}}
+  </div>
+  <div class="column3">
+    <h2>{{ name }}</h2>
+    <h1 id="hp">{{ hp }}</h1>
+  </div>
+  <div class="column3">
+  </div>
+</div>
+{{/you}}
+{{#players}}
+<div class="block" style="background-color:{{ color }}">
+  <div data-pid={{ pid }} class="op-left touchscreen-left"></div>
+  <div data-pid={{ pid }} class="op-right touchscreen-right"></div>
+  <p>{{ name }}</p>
+  <h2>{{ hp }}</h2>
+  <p id="damage" class="colored" style="color:{{ lobbyColor }}">{{ damage }}</p>
+</div>
+{{/players}}

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EDH Life Counter</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,17 +14,19 @@
   <body>
     <style id="local_style"></style>
     <div id='body'>
-      <div class="container-fluid">
+      <div class="jumbotron text-center">
         <h1>EDH Life Tracker</h1>
+      </div>
+      <div class="container">
         <div class='menu'>
-          <div class='bi-column' id='menu'>
+          <div id='menu'>
             <input type='text' id='name_field' class='form-control' placeholder='Name'>
-            <button type='button' id='create_button' class='btn btn-default'>Create Game</button>
-            <button type='button' id='join_button' class='btn btn-default'>Join Game</button>
+            <button type='button' id='create_button' class='btn btn-default col-md-6 col-offset-3'>Create Game</button>
+            <button type='button' id='join_button' class='btn btn-default col-md-6 col-offset-3'>Join Game</button>
           </div>
-          <div class='bi-column' id='join-menu' hidden='true'>
+          <div id='join-menu' hidden='true'>
             <input type='text' id='id_field' class='form-control' placeholder='Game ID'></input>
-            <button type='button' id='id_submit' class='btn btn-default'>Join</button>
+            <button type='button' id='id_submit' class='btn btn-default col-md-6 col-offset-3'>Join</button>
           </div>
           <div class='bi-column'>
           </div>

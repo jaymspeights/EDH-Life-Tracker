@@ -1,19 +1,21 @@
-{{#warning}}
-  <p style='color:red;'>{{ warning }}</p>
-{{/warning}}
-<h5>GAME ID: {{ id }}</h5>
-<table class='table'>
-  <thead>
-    <tr>
-      <th>Players</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#players}}
+<div class='container'>
+  {{#warning}}
+    <p style='color:red;'>{{ warning }}</p>
+  {{/warning}}
+  <h5>GAME ID: {{ id }}</h5>
+  <table class='table'>
+    <thead>
       <tr>
-        <td>{{ name }}</td>
+        <th>Players</th>
       </tr>
-    {{/players}}
-  </tbody>
-</table>
-<button type='button' id='start_button' class='btn btn-default' onclick='start()'>Start Game</button>
+    </thead>
+    <tbody>
+      {{#players}}
+        <tr>
+          <td>{{ name }}</td>
+        </tr>
+      {{/players}}
+    </tbody>
+  </table>
+  <button type='button' id='start_button' class='btn btn-default' onclick='start()'>Start Game</button>
+</div>

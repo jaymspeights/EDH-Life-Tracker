@@ -131,9 +131,7 @@ module.exports = {
     var player = getPlayer(lobby, pid);
     player.hp += parseInt(data.hp);
     for (var i = 0; i < data.players.length; i++) {
-      console.log("change1",data.players[i]);
       player = getDamage(getPlayer(lobby, data.players[i].pid), pid);
-      console.log("change2",data.players[i]);
       player.damage += parseInt(data.players[i].damage);
     }
     callback();
